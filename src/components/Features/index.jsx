@@ -10,7 +10,7 @@ export const Features = () => {
         </div>
         <div className="section-subtitle">
           <h2 className="h2 h-center">
-            <span>What You Deliver</span>
+            <span>What We Deliver</span>
           </h2>
         </div>
         <div className="feature">
