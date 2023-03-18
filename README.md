@@ -1,5 +1,7 @@
 # Harmony Beauty
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5e931d4a-642c-4c3d-a2d0-7c6bf9d7cade/deploy-status)](https://app.netlify.com/sites/harmony-beauty/deploys)
+
 An e-commerce beauty platform with a bespoke focus on serving the unique needs of individuals with disabilities.
 
 ### Running locally with NPM
