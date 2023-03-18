@@ -39,7 +39,7 @@ export const Footer = () => {
           <ul>
             {socialsData.map((social, index) => (
               <li key={index}>
-                <a href={social.path} target="_blank">
+                <a href={social.path} target="_blank" rel="noreferrer">
                   <Icon icon={social.icon} size={20} color="white" />
                 </a>
               </li>
