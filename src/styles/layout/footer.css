@@ -1,0 +1,210 @@
+/*---------------------------footer--------------------------*/
+footer {
+  text-align: left;
+  width: 100%;
+  min-width: 320px;
+  order: 3;
+  -webkit-order: 3;
+}
+
+.footer {
+  background: #383636;
+  z-index: 1;
+  padding: 46px;
+  padding-bottom: 12px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-bottom-social span {
+  font-size: 16px;
+  line-height: 170%;
+  color: #bfbaba;
+  display: block;
+  justify-content: center;
+  margin: 30px;
+  margin-bottom: 8px;
+}
+.footer-bottom-social ul {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.footer-bottom-social ul li {
+  margin-right: 10px;
+}
+.footer-bottom-social ul li a {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-bottom-social ul li a svg:before {
+  color: #999999;
+  transition: all 0.3s linear;
+}
+.footer-bottom-social ul li a:hover svg:before {
+  color: #fff;
+}
+.footer-bottom-social ul li a:hover svg:hover {
+  color: #f8447a;
+}
+.footer-nav {
+  padding: 60px 0 63px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+.footer-nav-col {
+  max-width: 215px;
+  width: 25%;
+}
+.footer-nav-col-title {
+  display: block;
+  font-size: 24px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 34px;
+  margin-left: 28px;
+  font-family: "Sans";
+}
+.footer-nav-col ul li {
+  margin-bottom: 8px;
+}
+.footer-nav-col ul li:last-of-type {
+  margin-bottom: 0;
+}
+.footer-nav-col ul li a {
+  color: #bbbbbb;
+  font-size: 16px;
+  line-height: 170%;
+  position: relative;
+  padding-left: 15px;
+}
+.footer-nav-col ul li a:hover {
+  color: #f8447a;
+}
+.footer-nav-col ul li a:before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #bbb;
+  font-size: 8px;
+}
+@-moz-document url-prefix() {
+  .footer-nav-col ul li a:before {
+    top: 60%;
+  }
+}
+.footer-nav-col:last-of-type {
+  margin-right: 50px;
+}
+.footer-nav-col:last-of-type ul li {
+  display: flex;
+  color: #bbbbbb;
+  line-height: 170%;
+  margin-bottom: 19px;
+}
+.footer-nav-col:last-of-type ul li svg {
+  margin-right: 15px;
+  padding-top: 4px;
+  font-size: 21px;
+}
+.footer-nav-col:last-of-type ul li a {
+  padding-left: 0;
+}
+.footer-nav-col:last-of-type ul li a:before {
+  display: none;
+}
+.footer-nav-col:last-of-type ul li .footer-nav-col-phones a {
+  display: block;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 8px;
+  line-height: normal;
+}
+.footer-nav-col:last-of-type ul li .footer-nav-col-phones a:hover {
+  opacity: 0.8;
+}
+.footer-copy {
+  padding-top: 20px;
+  padding-bottom: 4px;
+  font-size: 14px;
+  line-height: 170%;
+  color: #999999;
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  .footer-top {
+    padding: 40px 0 40px;
+  }
+  .footer-nav-col:last-of-type {
+    margin-right: 0;
+  }
+  .footer-nav-col:last-of-type ul li .footer-nav-col-phones a {
+    font-size: 16px;
+  }
+  .footer-nav-col:last-of-type ul li svg {
+    margin-right: 15px;
+    padding-top: 6px;
+    font-size: 16px;
+  }
+  .footer-nav {
+    padding: 40px 0 40px;
+  }
+  .footer-nav-col-title {
+    font-size: 20px;
+  }
+  .footer-nav-col ul li a,
+  .footer-copy {
+    font-size: 15px;
+  }
+  .footer-nav-col:last-of-type ul li .footer-nav-col-phones a {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer-top {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .footer-bottom-social {
+    order: 2;
+    margin: 10px 0;
+  }
+  .footer-bottom-social ul {
+    justify-content: center;
+  }
+  .footer-nav {
+    flex-wrap: wrap;
+  }
+  .footer-nav-col {
+    max-width: 100%;
+    width: 45%;
+    margin-bottom: 25px;
+  }
+  .footer-nav-col:last-of-type {
+    margin-bottom: 0;
+  }
+  .footer-nav-col:last-of-type ul li:last-of-type {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 374px) {
+  .footer-nav-col {
+    width: 100%;
+  }
+  .footer-nav-col-title {
+    text-align: center;
+    width: 100%;
+  }
+}

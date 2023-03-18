@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Browser Extension",
+    "icon": "chrome",
+    "description": "We has developed a revolutionary cross-browser extension that empowers you to surf the internet seamlessly and without any restrictions."
+  },
+  {
+    "id": 2,
+    "title": "Customer Service Support",
+    "icon": "users",
+    "description": "We provide support that is accessible to people with disabilities, including but not limited to a chat service that offers options for hearing-impaired or visually-impaired customers."
+  },
+  {
+    "id": 3,
+    "title": "Product Education",
+    "icon": "play",
+    "description": "We provide educational resources and guides for customers with disabilities to learn about cosmetic products and how to use them, such as video tutorials with audio descriptions."
+  },
+  {
+    "id": 4,
+    "title": "Customized Packaging",
+    "icon": "make-group",
+    "description": "We provide customized product packaging that is easier to open or use, including larger buttons or handles, or Braille or audio labels."
+  },
+  {
+    "id": 5,
+    "title": "Product Donations",
+    "icon": "heart",
+    "description": "Donate products or proceeds from sales to disability organizations or charities to support their cause and give back to the community."
+  },
+  {
+    "id": 6,
+    "title": "Personalized Recommendations",
+    "icon": "bell",
+    "description": "We offer personalized recommendations for cosmetics based on your needs and preferences, taking into account any specific requirements related to your disability."
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "title": "About",
+    "links": [
+      {
+        "icon": "point-right",
+        "name": "About us",
+        "path": "/about"
+      },
+      {
+        "icon": "point-right",
+        "name": "Faq",
+        "path": "/faq"
+      }
+    ]
+  },
+  {
+    "title": "Categories",
+    "links": [
+      {
+        "icon": "point-right",
+        "name": "Make Up",
+        "path": "/make-up"
+      },
+      {
+        "icon": "point-right",
+        "name": "Skin Care",
+        "path": "/skin-care"
+      },
+      {
+        "icon": "point-right",
+        "name": "Perfume",
+        "path": "/perfume"
+      }
+    ]
+  }
+]
