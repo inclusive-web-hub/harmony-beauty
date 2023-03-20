@@ -5,7 +5,7 @@ import { Roadmap } from "../../components/Roadmap"
 
 import React from "react"
 
-const Home = () => {
+const Landing = () => {
   return (
     <Layout>
       <Banner />
@@ -15,4 +15,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Landing

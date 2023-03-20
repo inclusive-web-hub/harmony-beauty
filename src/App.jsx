@@ -1,6 +1,36 @@
+// @ts-nocheck
 import React, { useEffect } from "react"
 import Router from "./router"
 import useReactPath from "./hooks/useReactPath"
+
+function initTiledesk() {
+  window.tiledeskSettings = {
+    projectid:
+      process.env.REACT_APP_TILEDESK_PROJECT_ID,
+  }
+  ;(function (d, s, id) {
+    var w = window
+    var d = document
+    class i {
+      constructor() {
+        i.c(arguments)
+      }
+      static c(args) {
+        i.q.push(args)
+      }
+    }
+    i.q = []
+    w.Tiledesk = i
+    var js,
+      fjs = d.getElementsByTagName(s)[0]
+    if (d.getElementById(id)) return
+    js = d.createElement(s)
+    js.id = id
+    js.async = true
+    js.src = "https://widget.tiledesk.com/v6/launch.js"
+    fjs.parentNode.insertBefore(js, fjs)
+  })(document, "script", "tiledesk-jssdk")
+}
 
 function App() {
   const loader = document.querySelector(".preloader")
@@ -30,9 +60,11 @@ function App() {
 
   const path = useReactPath()
 
+  initTiledesk()
+
   useEffect(() => {
     showLoader()
-    sleep(2000).then(() => {
+    sleep(1000).then(() => {
       hideLoader()
     })
     // eslint-disable-next-line

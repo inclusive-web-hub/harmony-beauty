@@ -9,30 +9,30 @@
     "id": 2,
     "title": "Customer Service Support",
     "icon": "users",
-    "description": "We provide support that is accessible to people with disabilities, including but not limited to a chat service that offers options for hearing-impaired or visually-impaired customers."
+    "description": "We provide support that is accessible to people with disabilities, including but not limited to a chat bot, and an AI for speech recognition that helps blind people to easily navigate on the website."
   },
   {
     "id": 3,
-    "title": "Product Education",
+    "title": "Online Resources",
     "icon": "play",
-    "description": "We provide educational resources and guides for customers with disabilities to learn about cosmetic products and how to use them, such as video tutorials with audio descriptions."
+    "description": "We plan to provide online resources, such as tutorials and articles, that are tailored to the needs of people with disabilities, to help them learn more about makeup and skincare."
   },
   {
     "id": 4,
-    "title": "Customized Packaging",
+    "title": "Accessible Website",
     "icon": "make-group",
-    "description": "We provide customized product packaging that is easier to open or use, including larger buttons or handles, or Braille or audio labels."
+    "description": "Our website is designed to be accessible for people with disabilities, with features such as alt text for images, easy-to-navigate menus, and compatibility with screen readers."
   },
   {
     "id": 5,
-    "title": "Product Donations",
+    "title": "Community Outreach",
     "icon": "heart",
-    "description": "Donate products or proceeds from sales to disability organizations or charities to support their cause and give back to the community."
+    "description": "We plan to engage in community outreach to promote inclusivity and raise awareness about the needs of people with disabilities, including partnerships with disability advocacy organizations and sponsorships of disability-friendly events."
   },
   {
     "id": 6,
     "title": "Personalized Recommendations",
     "icon": "bell",
-    "description": "We offer personalized recommendations for cosmetics based on your needs and preferences, taking into account any specific requirements related to your disability."
+    "description": "We plan to offer personalized recommendations for cosmetics based on your needs and preferences, taking into account any specific requirements related to your disability."
   }
 ]

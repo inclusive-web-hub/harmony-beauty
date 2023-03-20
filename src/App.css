@@ -3,3 +3,6 @@
 @import "styles/layout/footer";
 @import "styles/layout/components";
 @import "styles/layout/spinner";
+@import "styles/layout/auth-pages";
+@import "styles/layout/profile-page";
+@import "styles/layout/shop";

@@ -1,13 +1,19 @@
+// @ts-nocheck
 import { Link } from "react-router-dom"
 import { useEffect, useState } from "react"
 import { NavBar } from "./NavBar"
+import { Profile } from "./Profile"
 import navBarItem from "../../data/menu-items.json"
+import { useSelector } from "react-redux"
+import { authUser } from "../../redux/authReducer/selectors"
+
 import React from "react"
 
 import Icon from "../Icon"
 
 export const Header = () => {
-  const cart = {}
+  const currentUser = useSelector(authUser)
+  const [modalShow, setModalShow] = useState(false)
   const [fixedNavBar, setFixedNavBar] = useState(false)
 
   useEffect(() => {
@@ -16,6 +22,10 @@ export const Header = () => {
       window.removeEventListener("scroll", isSticky)
     }
   })
+
+  const showHide = () => {
+    setModalShow(!modalShow)
+  }
 
   const isSticky = () => {
     const scrollTop = window.scrollY
@@ -30,35 +40,26 @@ export const Header = () => {
       <div className={`header-content ${fixedNavBar ? "fixed" : ""}`}>
         <div className="header-logo">
           <Link to="/">
-            <img src="/logo.png" width="80px" alt="" />
+            <img src="/logo.png" width="70px" alt="" />
           </Link>
         </div>
         <div className="header-box">
           <NavBar navBarItem={navBarItem} />
-          <ul className="header-options">
-            <li>
-              <Link to="/faq" target="_blank">
-                <Icon icon="search" size={20} color="black" />
-              </Link>
-            </li>
-            <li>
-              <Link to="/profile" target="_blank">
-                <Icon icon="user" size={20} color="black" />
-              </Link>
-            </li>
-            <li>
-              <Link to="/cart" target="_blank">
+          {!currentUser?.length > 0 ? (
+            <Link className="btn btn-danger btn-rounded" to="/login">
+              Get Started
+            </Link>
+          ) : (
+            <ul className="header-options">
+              <li onClick={showHide}>
                 <Icon icon="cart" size={20} color="black" />
-                <span>{cart?.length ?? "0"}</span>
-              </Link>
-            </li>
-          </ul>
-        </div>
-
-        <div className="btn-menu js-btn-menu">
-          {[1, 2, 3].map((i) => (
-            <span key={i}>&nbsp;</span>
-          ))}
+                <span>{"12"}</span>
+              </li>
+              <li>
+                <Profile />
+              </li>
+            </ul>
+          )}
         </div>
       </div>
     </header>
